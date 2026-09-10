@@ -522,3 +522,439 @@
   }
 }
 
+.dashboard {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  background: linear-gradient(180deg, #1952d4 0%, #05236b 40%, #03123a 100%);
+  padding: 60px 40px 40px 40px;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+  box-sizing: border-box;
+}
+
+.podcast-banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 50px;
+  gap: 40px;
+}
+
+.banner-text-content {
+  max-width: 760px;
+}
+
+.podcast-main-title {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 4rem;
+  font-weight: normal;
+  letter-spacing: -0.5px;
+  margin-bottom: 25px;
+  margin-left: 40px;
+  margin-right: 40px;
+  line-height: 1.1;
+}
+
+.podcast-main-subtitle {
+  font-size: 1.5rem;
+  line-height: 1.55;
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 30px;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.streaming-platforms-row {
+  display: flex;
+  gap: 14px;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.platform-icon-circle {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  color: #03123a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: transform 0.2s, opacity 0.2s;
+
+}
+
+.platform-icon-circle:hover {
+  transform: scale(1.08);
+  opacity: 0.9;
+}
+
+.podcast-listen-action-btn {
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  color: #ffffff;
+  text-decoration: none;
+  padding: 14px 28px;
+  font-size: 0.95rem;
+  white-space: nowrap;
+  margin-top: 15px;
+  transition: background-color 0.2s, border-color 0.2s;
+  margin-left: 40px;
+  margin-right: 60px;
+}
+
+.podcast-listen-action-btn:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-color: #ffffff;
+}
+
+.podcast-player-split-panel {
+  display: flex;
+  background-color: #ffffff;
+  color: #111111;
+  width: 100%;
+  height: 440px;
+  margin-bottom: 50px;
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.3);
+}
+
+.player-meta-box {
+  flex: 1;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.publish-date-stamp {
+  font-size: 0.85rem;
+  color: #666666;
+  margin-bottom: 20px;
+}
+
+.player-main-headline {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2.1rem;
+  font-weight: bold;
+  line-height: 1.25;
+  color: #000000;
+  margin-bottom: 25px;
+  cursor: pointer;
+}
+
+.player-main-headline:hover {
+  color: #1952d4;
+}
+
+.player-short-excerpt {
+  font-size: 1.05rem;
+  line-height: 1.5;
+  color: #444444;
+}
+
+.player-video-frame {
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+  background-color: #222222;
+}
+
+.player-bg-artwork {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.top-info-overlay-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  color: #ffffff;
+  font-family: serif;
+  font-style: italic;
+  font-size: 0.9rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+}
+
+.central-play-trigger {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 76px;
+  height: 76px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  color: #05236b;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+  z-index: 5;
+  transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.central-play-trigger svg {
+  margin-left: 4px; 
+}
+
+.central-play-trigger:hover {
+  transform: translate(-50%, -50%) scale(1.08);
+}
+
+.audio-controls-overlay-dashboard {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 25px;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.85) 0%, rgba(0, 0, 0, 0.4) 70%, rgba(0, 0, 0, 0) 100%);
+  z-index: 5;
+}
+
+.dashboard-controls-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.scrubbing-skip-group {
+  display: flex;
+  gap: 16px;
+}
+
+.skip-btn {
+  background: none;
+  border: none;
+  color: #ffffff;
+  font-size: 1.3rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  position: relative;
+  opacity: 0.85;
+}
+
+.skip-btn:hover { opacity: 1; }
+
+.skip-num {
+  font-size: 0.55rem;
+  font-family: Arial, sans-serif;
+  position: absolute;
+  top: 52%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: bold;
+}
+
+.timeline-slider-wrapper {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.time-readout {
+  font-size: 0.75rem;
+  font-family: monospace;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.timeline-track-bar {
+  flex-grow: 1;
+  height: 3px;
+  background-color: rgba(255, 255, 255, 0.3);
+  position: relative;
+  cursor: pointer;
+}
+
+.timeline-progress-fill {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px; 
+  height: 100%;
+  background-color: #ffffff;
+}
+
+.volume-speaker-btn {
+  background: none;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+  opacity: 0.85;
+  display: flex;
+  align-items: center;
+}
+
+.volume-speaker-btn:hover { opacity: 1; }
+
+.podcast-playlist-navigation-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  padding-top: 25px;
+}
+
+.playlist-tab-column {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  cursor: pointer;
+}
+
+.tab-accent-line {
+  width: 100%;
+  height: 4px;
+  background-color: rgba(255, 255, 255, 0.3); 
+  transition: background-color 0.2s ease;
+}
+
+.tab-card-title {
+  font-size: 0.88rem;
+  font-weight: normal;
+  line-height: 1.4;
+  color: rgba(255, 255, 255, 0.8);
+  transition: color 0.2s ease;
+}
+
+.active-track-indicator .tab-accent-line,
+.playlist-tab-column:hover .tab-accent-line {
+  background-color: #00a3e0; 
+}
+
+.active-track-indicator .tab-card-title,
+.playlist-tab-column:hover .tab-card-title {
+  color: #ffffff;
+}
+
+@media (max-width: 1024px) {
+  .podcast-player-split-panel { flex-direction: column; height: auto; }
+  .player-video-frame { height: 320px; }
+  .podcast-playlist-navigation-grid { grid-template-columns: repeat(2, 1fr); }
+  .podcast-banner-hero { flex-direction: column; gap: 20px; }
+}
+
+@media (max-width: 640px) {
+  .podcast-playlist-navigation-grid { grid-template-columns: 1fr; }
+  .podcast-main-title { font-size: 2.5rem; }
+  .player-main-headline { font-size: 1.6rem; }
+  .player-meta-box { padding: 30px; }
+}
+
+.banner {
+    background: #071524;
+    color: #fff;
+    padding: 80px 40px;
+    max-width: 1440px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+    
+}
+
+.section-header {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.title {
+    font-family: 'Georgia', serif;
+    font-size: 2.8rem;
+    font-weight: 400;
+    line-height: 1.2;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 60px auto;
+}
+
+.row {
+    display: flex;
+    gap: 24px;
+}
+
+
+.pic {
+    width: 100%;
+    height: 240px;
+    overflow: hidden;
+    margin-bottom: 24px;
+    background: #122130;
+}
+
+
+
+.heading {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 16px;
+    cursor: pointer;
+}
+
+.heading:hover {
+    text-decoration: underline;
+}
+
+.text {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    color: #ccc;
+}
+
+@media (max-width: 992px) {
+    .row {
+        flex-direction: column;
+        gap: 40px;
+    }
+    
+    .title {
+        font-size: 2.2rem;
+        text-align: center;
+    }
+    
+    .pic {
+        height: 300px;
+    }
+}
+
+.row {
+    display: flex;
+    gap: 24px;
+    width: 100%;
+}
+
+.box {
+    flex: 1; 
+    display: flex;
+    flex-direction: column;
+    min-width: 150px;
+    transition: flex 0.4s cubic-bezier(0.25, 1, 0.5, 1); 
+}
+
+.box:hover {
+  background-color: white;
+  color: black;
+}
+
+
+
+
+
+
